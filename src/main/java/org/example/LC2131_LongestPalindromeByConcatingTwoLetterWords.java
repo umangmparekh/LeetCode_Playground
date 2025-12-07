@@ -23,12 +23,7 @@ public class LC2131_LongestPalindromeByConcatingTwoLetterWords {
 
         HashMap<String, Integer> words = new HashMap<String, Integer>();
         for(String s: strs){
-            Integer countOfTheWord = words.get(s);
-            if(countOfTheWord == null) {
-                words.put(s, 1);
-            } else {
-                words.put(s, countOfTheWord+1);
-            }
+            words.put(s, words.getOrDefault(s, 0)+1);
 
         }
 
