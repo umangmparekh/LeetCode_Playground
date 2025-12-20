@@ -2,6 +2,12 @@ package org.example;
 
 import java.util.Stack;
 
+/**
+ * LeetCode - 146
+ *
+ * Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
+ *
+ */
 public class LC71_SimplifyPath {
 
     public static void main(String[] args) {
