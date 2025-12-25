@@ -39,7 +39,10 @@ public class LC1249_MinRemoveToMakeValid {
 
     public static void main(String[] args) {
 
-        System.out.println(" LC1249_MinRemoveToMakeValid  >> " + minRemoveToMakeValid("lee(t(c)o)de)"));
+        System.out.println(" LC1249_MinRemoveToMakeValid lee(t(c)o)de)  >> " + minRemoveToMakeValid("lee(t(c)o)de)"));
+
+        System.out.println(" LC1249_MinRemoveToMakeValid ))((  >> " + minRemoveToMakeValid("))(("));
+
     }
 
     public static String minRemoveToMakeValid(String s){
