@@ -1,6 +1,5 @@
 package C1;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,7 +21,7 @@ public class C1_MostFrequentSingalDigitReading {
         HashMap<Integer, Integer> singleDigitFreqMap = new HashMap<>();
         for(int i : readings){
             int num = singleDigitReading(i);
-            singleDigitFreqMap.put(num, singleDigitFreqMap.getOrDefault(i, 0)+1 );
+            singleDigitFreqMap.put(num, singleDigitFreqMap.getOrDefault(num, 0)+1 );
         }
 
         int bestDigit = -1;
